@@ -2,7 +2,7 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
-Bundler.require
+#Bundler.require
 require "tabular-text"
 
 module Dummy

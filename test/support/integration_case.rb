@@ -1,6 +1,6 @@
-require 'capybara'
+require 'capybara/rails'
 
 class ActiveSupport::IntegrationCase < ActiveSupport::TestCase
-  include Capybara
+  include Capybara::DSL
   include Rails.application.routes.url_helpers
 end
