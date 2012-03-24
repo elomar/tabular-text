@@ -7,11 +7,12 @@ require "tabular-text/version"
 Gem::Specification.new do |s|
   s.name        = "tabular-text"
   s.version     = TabularText::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of TabularText."
-  s.description = "TODO: Description of TabularText."
+  s.authors     = ["Elomar Souza"]
+  s.email       = ["elomar@elomar.me"]
+  s.homepage    = "http://github.com/elomar/tabular-text"
+  s.summary     = "Generate position-based text files"
+  s.description = "You know those times when you're dealing with a 10-year-old government API and they require a text file
+    where every field has to be in a certain position? TabularText for the rescue!"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
