@@ -16,6 +16,10 @@ class TabularTextFieldTest < ActiveSupport::TestCase
   test 'string too big for length gets cut' do
     assert_equal "STR", Field.new("STRING", 3).to_s
   end
+
+  test 'nil with length pads with spaces to the right' do
+    assert_equal " " * 5, Field.new(nil, 5).to_s
+  end
   
   test 'number without length returns number' do
     assert_equal "123", Field.new(123).to_s

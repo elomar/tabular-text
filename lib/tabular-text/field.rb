@@ -19,12 +19,12 @@ module TabularText
 
     def pad
       case @content
-      when String
-        slice.ljust(length, " ")
-      when Fixnum
-        slice.rjust(length, "0")
       when Time
         @content.strftime "%Y%m%d"
+      when Fixnum
+        slice.rjust(length, "0")
+      else
+        slice.ljust(length, " ")
       end
     end
 
