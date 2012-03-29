@@ -18,10 +18,10 @@ module TabularText
     private
 
     def pad
-      case @content
-      when Time
+      case
+      when @content.respond_to?(:strftime)
         @content.strftime "%Y%m%d"
-      when Fixnum
+      when @content.is_a?(Integer)
         slice.rjust(length, "0")
       else
         slice.ljust(length, " ")

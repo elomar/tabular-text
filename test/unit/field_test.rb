@@ -33,6 +33,10 @@ class TabularTextFieldTest < ActiveSupport::TestCase
     assert_equal "19901216", Field.new(Time.new(1990, 12, 16)).to_s
   end
 
+  test 'date returns YYYYMMDD' do
+    assert_equal "19901216", Field.new(Date.new(1990, 12, 16)).to_s
+  end
+
   test 'is ascii' do
     assert_equal Encoding::ASCII, Field.new("STRING").to_s.encoding
   end
