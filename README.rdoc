@@ -1,3 +1,17 @@
 = TabularText
 
-This project rocks and uses MIT-LICENSE.
+TabularText helps you create files composed of lines with fields in fixed positions. Yes, people still use that. Yes, a more structured format would be best.
+
+Example, writing
+
+  builder.line do |l| 
+    l.field 'Name has 30 chars', 30
+    l.field 1, 6
+    l.field 27
+  end
+
+will generate
+
+  Name has 30 chars             00000127
+
+A more detailed README will be written the day anyone thinks about using this.
