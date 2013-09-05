@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
   s.version     = TabularText::VERSION
   s.authors     = ["Elomar Souza"]
   s.email       = ["elomar@elomar.me"]
+  s.license     = "MIT"
   s.homepage    = "http://github.com/elomar/tabular-text"
   s.summary     = "Generate position-based text files"
   s.description = "You know those times when you're dealing with a 10-year-old government API and they require a text file
