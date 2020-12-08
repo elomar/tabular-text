@@ -1,9 +1,9 @@
 module TabularText
   class Handler
-    def self.call(template)
+    def self.call(_template, source)
       <<-TEMPLATE
         builder = TabularText::Builder.new
-        #{template.source}
+        #{source}
         builder.render
       TEMPLATE
     end

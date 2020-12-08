@@ -1,3 +1,0 @@
-abuilder.line do |l|
-  l.field @content
-end
